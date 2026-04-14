@@ -43,7 +43,7 @@ const timelineData = [
     id: 4,
     period: "1941 - 1945",
     title: "Về nước & Lãnh đạo Cách mạng",
-    image: "https://cdn-i.doisongphapluat.com.vn/476/2019/9/2/quang-truong-ba-dinh.jpg",
+    image: "https://file3.qdnd.vn/data/images/0/2022/09/01/tvkimgiang/bac%20ho%20doc%20tuyen%20ngon.jpg?dpi=150&quality=100&w=870",
     events: [
       { date: "28/01/1941", text: "Bác trở về nước sau 30 năm bôn ba, sống và làm việc tại hang Pác Bó (Cao Bằng). Từ năm 1942, Người lấy tên là Hồ Chí Minh." },
       { date: "Tháng 5/1941", text: "Chủ trì Hội nghị Trung ương Đảng lần thứ 8, thành lập Mặt trận Việt Minh." },
