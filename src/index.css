@@ -1,0 +1,120 @@
+:root {
+  /* "Bình minh" Theme - Default */
+  --color-bg: #e5d5be; 
+  --color-text: #1a1614; 
+  --color-primary: #631718; 
+  --color-secondary: #3b312b; 
+  --color-accent: #8e4428;
+  --color-line: #8b7965;
+  --color-card-bg: #ffffff;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-calligraphy: 'Dancing Script', cursive;
+  
+  --spacing-section: 6rem;
+}
+
+[data-theme='dark'] {
+  /* "Đêm đen" Theme */
+  --color-bg: #12100e; 
+  --color-text: #d4cbb8; 
+  --color-primary: #8e2b2c; /* đỏ bã trầu sáng hơn chút để nổi trên nền đen */
+  --color-secondary: #2c2522; 
+  --color-accent: #b25838;
+  --color-line: #4a403a;
+  --color-card-bg: #1c1816;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.text-center { text-align: center; }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Base button styles */
+button {
+  font-family: var(--font-heading);
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background-color: #63191a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Disable scrollbar for a cleaner look or customize it */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Background textures / filters class */
+.sepia-filter {
+  filter: sepia(0.6) contrast(1.1) brightness(0.9);
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+}
